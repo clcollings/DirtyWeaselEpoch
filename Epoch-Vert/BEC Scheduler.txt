@@ -1,130 +1,67 @@
 <?xml version="1.0"?>
 <Scheduler>
 
-  <!-- *** RESTARTS *** -->
-  <!-- 06:00 restart warnings -->
-  <job id="0">
-	<time>05:55:00</time>
-	<delay>000000</delay>
-	<day>1,2,3,4,5,6,7</day>
-	<loop>0</loop> 
-	<cmd>say -1 This server will restart in 5 min</cmd>
-	<cmdtype>0</cmdtype>			
-  </job>
-
-  <job id="1">
-	<time>05:58:00</time>
-	<delay>000000</delay>
-	<day>1,2,3,4,5,6,7</day>
-	<loop>0</loop> 
-	<cmd>say -1 This server will restart in 2 min-Final Warning</cmd>
-	<cmdtype>0</cmdtype>			
-  </job>
-
-  <!-- 06:00 restart -->
-  <job id="2">
-	<time>06:00:00</time>
-	<delay>000000</delay>
-	<day>1,2,3,4,5,6,7</day>
-	<loop>0</loop> 
-	<cmd>#shutdown</cmd>
-	<cmdtype>0</cmdtype>			
-  </job>
+	<!-- Schedular to be shown all days in the week. -->
+	<!-- show text ingame every 20 min -->
+	<job id="0">
+		<time>001500</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>1</loop> 
+		<cmd>say -1 Visit us at dirtyweasel.com.</cmd>	
+		<cmdtype>0</cmdtype>
+	</job>
 	
-  <!-- 12:00 restart warnings -->
-  <job id="3">
-	<time>11:55:00</time>
-	<delay>000000</delay>
-	<day>1,2,3,4,5,6,7</day>
-	<loop>0</loop> 
-	<cmd>say -1 This server will restart in 5 min</cmd>
-	<cmdtype>0</cmdtype>			
-  </job>
-
-  <job id="4">
-	<time>11:58:00</time>
-	<delay>000000</delay>
-	<day>1,2,3,4,5,6,7</day>
-	<loop>0</loop> 
-	<cmd>say -1 This server will restart in 2 min!-Final Warning</cmd>
-	<cmdtype>0</cmdtype>			
-  </job>
-
-  <!-- 12:00:00 restart -->
-  <job id="5">
-	<time>12:00:00</time>
-	<delay>000000</delay>
-	<day>1,2,3,4,5,6,7</day>
-	<loop>0</loop> 
-	<cmd>#shutdown</cmd>
-	<cmdtype>0</cmdtype>			
-  </job>
+	<!-- show text ingame every 60 min -->
+	<job id="1">
+		<time>006000</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>1</loop> 
+		<cmd>say -1 This server restarts 4 times per day.</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
 	
-  <!-- 18:00 restart warnings -->
-  <job id="6">
-	<time>17:55:00</time>
-	<delay>000000</delay>
-	<day>1,2,3,4,5,6,7</day>
-	<loop>0</loop> 
-	<cmd>say -1 This server will restart in 5 min</cmd>
-	<cmdtype>0</cmdtype>			
-  </job>
-
-  <job id="7">
-	<time>17:58:00</time>
-	<delay>000000</delay>
-	<day>1,2,3,4,5,6,7</day>
-	<loop>0</loop> 
-	<cmd>say -1 This server will restart in 2 min!-Final Warning</cmd>
-	<cmdtype>0</cmdtype>			
-  </job>
-
-  <!-- 18:00:00 restart -->
-  <job id="8">
-	<time>18:00:00</time>
-	<delay>000000</delay>
-	<day>1,2,3,4,5,6,7</day>
-	<loop>0</loop> 
-	<cmd>#shutdown</cmd>
-	<cmdtype>0</cmdtype>			
-  </job>	
 	
-  <!-- 00:00 restart warnings -->
-  <job id="9">
-	<time>23:55:00</time>
-	<delay>000000</delay>
-	<day>1,2,3,4,5,6,7</day>
-	<loop>0</loop> 
-	<cmd>say -1 This server will restart in 5 min</cmd>
-	<cmdtype>0</cmdtype>			
-  </job>
-
-  <job id="10">
-	<time>23:58:00</time>
-	<delay>000000</delay>
-	<day>1,2,3,4,5,6,7</day>
-	<loop>0</loop> 
-	<cmd>say -1 This server will restart in 2 min!-Final Warning</cmd>
-	<cmdtype>0</cmdtype>			
-  </job>
-
-  <!-- 00:00:00 restart -->
-  <job id="11">
-	<time>00:00:00</time>
-	<delay>000000</delay>
-	<day>1,2,3,4,5,6,7</day>
-	<loop>0</loop> 
-	<cmd>#shutdown</cmd>
-	<cmdtype>0</cmdtype>			
-  </job>
-
-  <job id="12">
-	<time>001500</time>
-	<delay>000010</delay>
-	<day>1,2,3,4,5,6,7</day>
-	<loop>1</loop> 
-	<cmd>say -1 Check out our website-dirtyweasel.com, and Youtube-Dirty Weasel Media</cmd>	
-	<cmdtype>0</cmdtype>
-  </job>
+	<!-- *** RESTARTS *** -->
+	<!-- 5 min to the 06:00 restart -->
+	<job id="2">
+		<time>05:55:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 This server will restart in 5 min!.</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	
+	<!-- 5 min to the 12:00 restart -->
+	<job id="3">
+		<time>11:55:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 This server will restart in 5 min!.</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	
+	<!-- 5 min to the 18:00 restart -->
+	<job id="4">
+		<time>17:55</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 This server will restart in 5 min!.</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	
+	<!-- 5 min to the 00:00 restart -->
+	<job id="5">
+		<time>23:55:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 This server will restart in 5 min!.</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
 
 </Scheduler>
